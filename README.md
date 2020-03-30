@@ -10,7 +10,7 @@ To get started you need to get everything set up so we are able to run our React
     * ```ReactDOM.render()``` should only ever render this component.
     * All other components will render through this component either referenced directly in this component or as children of components referenced directly in this component.
 
-> The code in this repo, index.html and reactApp.js represent the lab up to this point. You're welcome to use this code as a starter or for reference to help you get going.
+> The code in [this repo](https://gitlab.com/kenzie-academy/se/fe/react/sports-lab), index.html and reactApp.js represent the lab up to this point. You're welcome to use this code as a starter or for reference to help you get going.
 
 ## Normal Mode
 Let's start building our game
