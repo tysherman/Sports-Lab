@@ -61,6 +61,3 @@ Hard mode is not required and is to challenge you on concepts related to state. 
 * Since all the game data will be tracked by the **Game** components state, the method used when clicking the shoot button for a team should also be passed in as a prop. This method needs to affect state in the right component.
 * Add a **Reset Game** button to the **Game** and a counter displaying the number of resets.
     * When the reset button is pressed the team stats should reset and the reset counter should increase by 1
-
-## Extra Credit
-Create a Scoreboard component that displays the HOME and VISITING team scores. **(3 pts.)**
