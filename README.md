@@ -52,12 +52,3 @@ Let's add some extra functionality to our sports game.
     * Each team should function as before but now conditionally display a **Shot Percentage** metric if a shot has been taken by the team.
 * Think about what would happen if we added another **Game** component to our App. We could change the **Venue** name but we can only create new games with the same teams. What could we modify in the **Game** and **Team** components to allow us to have unique teams for each game we include in our default App component?
 
-## Hard Mode
-Hard mode is not required and is to challenge you on concepts related to state. In hard mode, we want to modify the **Game** component to be the source of the truth for the games state. The **Game** component should keep track of how the game is played and it's progress. Currently, most of this is tracked in our **Team** component. Our game component will manage 2 teams, home and visiting, and their stats during the game. To accomplish this we will be converting our **Team** component to a stateless functional component and having the stateful **Game** component pass the data to the teams as props. This is concept is called [Lifting State Up](https://reactjs.org/docs/lifting-state-up.html). We are sharing state with all the components concerned by moving it up to the closest common ancestor of the components that rely on it.
-
-* Convert the **Team** component to a functional stateless component. 
-    * Everything that relied on state before inside the **Team** component should now rely on passed in props from the **Game** component.
-* Update the **Game** component to keep track of the home and visiting team stats and pass that data to the **Team** component as props.
-* Since all the game data will be tracked by the **Game** components state, the method used when clicking the shoot button for a team should also be passed in as a prop. This method needs to affect state in the right component.
-* Add a **Reset Game** button to the **Game** and a counter displaying the number of resets.
-    * When the reset button is pressed the team stats should reset and the reset counter should increase by 1
